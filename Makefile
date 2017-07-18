@@ -2,7 +2,7 @@ T=openssl
 
 PREFIX		?=/usr/local
 LIB_OPTION	?= -shared 
-CC			 = gcc
+CC			?= gcc
 
 #Lua auto detect
 LUA_VERSION ?= $(shell pkg-config luajit --print-provides)
